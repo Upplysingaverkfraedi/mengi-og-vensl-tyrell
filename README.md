@@ -100,24 +100,23 @@ print(fylki)
 print()
 ```
 
-### R Kóði
 
-```r
-# Setja slembifræ með dagsetningu
-dd <- 17
-mm <- 6
-yyyy <- 1944
-seed <- as.numeric(paste0(dd, sprintf("%02d", mm), yyyy))
-set.seed(seed)
+---
 
-# Búa til fylki
-fylki <- matrix(round(runif(4 * 4, 0, 1)), nrow = 4)
+## Hvernig skal keyra kóðann
 
-# Endurskrifa dagsetningu
-formatted_date <- sprintf("%02d-%02d-%04d", dd, mm, yyyy)
+### Forkröfur
 
-# Prenta niðurstöður
-cat("Fylkið fyrir dagsetninguna", formatted_date, "og seed", seed, ":\n")
-print(fylki)
-cat("\n")
-```
+Til þess að keyra kóðann þarf að hafa eftirfarandi forrit og pakka:
+
+- **Python 3.xx**
+- **Jupyter Notebook** - Hægt að setja upp á skipanalínunni: pip install notebook
+- **Pillow (PIL)** - Hægt að setja upp á skipanalínunni: pip install pillow
+- **Tkinter** - Fylgir yfirleitt Python uppsetningu
+- **IPython** - Hægt að setja upp á skipanalínunni: pip install ipython
+
+### Hvernig á að keyra forritið
+
+- **Keyrðu kóðann í Jupyter notebook í réttri röð**
+- **Sláðu inn afmælisdaginn þinn þegar þú ert beðin/nn/ð um það**
+- **Smelltu á 'Vista mynd' til þess að vista myndina sem PNG**
